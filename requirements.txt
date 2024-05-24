@@ -1,0 +1,10 @@
+fastapi
+pymongo
+uvicorn
+passlib
+PyJWT
+pydantic
+typing
+pytz
+python-dotenv
+python-multipart
