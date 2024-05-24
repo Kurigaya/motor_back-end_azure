@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
-import gridfs
+# import gridfs
 
 class DataBase:
     def __init__(self) -> None:
@@ -24,7 +24,7 @@ class DataBase:
         collection = self.motor_db[coll_name]
         return collection
     
-    def get_db_fs(self):
-        return self.client.gridfs_example
+    # def get_db_fs(self):
+    #     return self.client.gridfs_example
 
 db = DataBase()
