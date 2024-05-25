@@ -10,12 +10,12 @@ app = FastAPI()
 handler = Mangum(app)
 
 # Allow all origins for local development
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["*"],
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 #Root greeting
 @app.get("/")
