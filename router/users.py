@@ -8,13 +8,13 @@ from router.devices import motor_info_coll
 from auth import Auth, ACCESS_TOKEN_EXPIRE_MINUTES
 from model.devices import Motor_id
 from model.users import Register, Login, Username
-from gridfs import GridFS
+# from gridfs import GridFS
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 router = APIRouter()
 user_coll = db.collection("users")
-fs = GridFS(db.get_db_fs())
+# fs = GridFS(db.get_db_fs())
 
 # Function to hash the password
 def hash_password(password: str) -> str:
