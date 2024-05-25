@@ -8,3 +8,4 @@ typing
 pytz
 python-dotenv
 python-multipart
+mangum
